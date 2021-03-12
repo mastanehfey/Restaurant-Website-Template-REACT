@@ -1,3 +1,38 @@
+# Restaurant-Website-Template-REACT
+Restaurant Online Ordering System Which is bootstrapped with Create React App.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Demo](#demo)
+
+## General info
+```
+This project is a Restaurant online ordering website, Data is hosted by Netlify.
+Stores the cart in Local Storage.
+Which I made it to improve my skills in using Context in React.
+```
+	
+## Technologies
+Project is created with:
+* HTML5 / CSS3
+* JavaScript
+* React
+* Netlify
+	
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../Restaurant-Website-Template-REACT
+$ npm install
+$ npm start
+```
+
+## Demo
+http://template1.ml/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
