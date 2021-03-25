@@ -17,7 +17,7 @@
   --leafTransition: all linear 1.7s;
 }
 h1 {
-  font-family: fantasy;
+  font-family: "main-font";
 }
 body {
   background: var(--darkBlack);
@@ -104,7 +104,7 @@ a {
 .sticky-bottom-menu {
   display: flex;
   justify-content: center;
-  /* width: 100%; */
+  width: 100%;
   background: var(--darkestBlack);
   position: fixed;
   bottom: 0;
@@ -113,7 +113,7 @@ a {
   padding-left: 0;
 }
 .collapse-menu {
-  position: relative;
+  position: fixed !important;
   display: flex;
   flex-direction: column;
   background: var(--darkBlack);
@@ -336,7 +336,7 @@ a {
 }
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: var(--lightGray);
   padding-bottom: 1em;
   align-items: center;
@@ -350,6 +350,13 @@ a {
 }
 .social-media-item:hover {
   color: var(--gray);
+}
+.social-media-container-small {
+  display: flex;
+  padding-top: 1em;
+}
+.social-media-container-small a {
+  margin-right: 0.7em;
 }
 @media (max-width: 768px) {
   .footer-links {
@@ -639,7 +646,7 @@ a {
 .single-food-detail h1 {
   font-weight: 400;
   font-size: 2.8em;
-  font-family: fantasy;
+  font-family: "main-font";
 }
 .align-center {
   justify-content: center !important;
@@ -743,7 +750,7 @@ a {
 .extra-info-btns h1 {
   font-weight: 100;
   font-size: 1.4em;
-  font-family: fantasy;
+  font-family: "main-font";
   margin: 0.2em;
   color: var(--gray);
   cursor: pointer;
@@ -962,8 +969,6 @@ td {
   justify-content: space-between;
 }
 /* checkout form -------------------------------------------------------*/
-.checkout-page-container {
-}
 .checkout-form-container {
   margin-right: 1em;
   width: 100%;
@@ -1198,8 +1203,9 @@ input:checked {
 .sliderTextContainer h1 {
   font-weight: 300;
   font-size: 2em;
-  font-family: fantasy, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif sans-serif;
+  font-family: "main-font", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+    sans-serif sans-serif;
   margin: 0.2em 0;
 }
 .sliderTextContainer h2 {
@@ -1214,6 +1220,29 @@ input:checked {
 .slide-inner-box img {
   width: 60px;
   height: auto;
+}
+.slide-inner-box h1 {
+  font-family: "main-font";
+  font-size: 1.5em;
+  letter-spacing: 0;
+}
+.slide-inner-box h2 {
+  font-family: "main-font";
+  font-size: 1.1em;
+  letter-spacing: 0;
+}
+.order-now-btn {
+  font-size: 0.9em;
+  background: var(--darkred);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.7em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.order-now-btn:hover {
+  background: black;
 }
 /* tweak */
 @media (max-width: 464px) {
@@ -1239,8 +1268,29 @@ input:checked {
   .image-wrapper {
     max-width: 470px !important;
   }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: var(--lightGray);
+    padding-bottom: 1em;
+    align-items: center;
+  }
+  .social-media {
+    display: flex;
+  }
+  .social-media-container-small {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
+  .slide-inner-box h1 {
+    font-size: 2em;
+    letter-spacing: 0;
+  }
+  .slide-inner-box h2 {
+    font-size: 2em;
+    letter-spacing: 0;
+  }
   .slide-wrapper img {
     height: 600px;
   }
@@ -1273,25 +1323,41 @@ input:checked {
   .chief-product-section h1 {
     font-size: 3em !important;
   }
+  .promo-form h1 {
+    font-size: 2.6em !important;
+  }
+  .promo-form h3 {
+    font-size: 1.8em !important;
+  }
+  .send-btn-promocode {
+    outline: none;
+    margin-left: 0.5em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0.5em 0.6em;
+    cursor: pointer;
+    transition: var(--mainTransition);
+  }
+  .send-btn-promocode {
+    padding: 0.5em 1.3em !important;
+  }
+  .promocode-container {
+    background-position: center !important;
+  }
+  .home-email-input {
+    background: rgba(255, 255, 255, 0.11) !important;
+  }
 }
 @media (min-width: 768px) {
   .moving-images-wrapper {
     width: 290px !important;
   }
-}
-.order-now-btn {
-  font-size: 1.2em;
-  font-weight: bold;
-  background: var(--darkred);
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0.7em 1em;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.order-now-btn:hover {
-  background: black;
+  .order-now-btn {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+  }
 }
 /* home chief section ----------------------------------------------------------------------*/
 .chief-section-containner {
@@ -1371,7 +1437,7 @@ input:checked {
   padding-right: 2em;
 }
 .chief-h1 {
-  font-family: fantasy;
+  font-family: "main-font";
   font-size: 2.5em;
   padding-right: 1em;
 }
@@ -1393,10 +1459,6 @@ input:checked {
 .carousel-section-home {
   margin-top: 300px;
   padding: 0.8em;
-}
-.test {
-  height: 700px;
-  background: gray;
 }
 
 .react-multiple-carousel__arrow {
@@ -1420,7 +1482,7 @@ input:checked {
   outline: none;
   background: none;
   font-size: 2.2em;
-  font-family: fantasy;
+  font-family: "main-font";
   color: rgba(255, 255, 255, 0.288);
   cursor: pointer;
   padding: 0 1em;
@@ -1454,17 +1516,17 @@ input:checked {
   background-image: url("/src/images/homepage/promo-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
 }
 .promo-form h1 {
-  font-size: 2.6em;
+  font-size: 2em;
   padding: 0;
   margin: 0 0 0.5em 0;
   font-weight: 200;
   letter-spacing: 0;
 }
 .promo-form h3 {
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin: 0;
 }
 .promo-form {
@@ -1484,7 +1546,7 @@ input:checked {
   border: none;
   font-size: 1.2em;
   font-weight: 700;
-  padding: 0.5em 1.3em;
+  padding: 0.5em 0.6em;
   cursor: pointer;
   transition: var(--mainTransition);
 }
@@ -1493,7 +1555,7 @@ input:checked {
 }
 .home-email-input {
   font-size: 1em;
-  background: rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.514);
   width: 100%;
 }
 .home-email-input::placeholder {
@@ -1538,7 +1600,7 @@ input:checked {
     display: block;
   }
   .promocode-input-wrapper {
-    width: 98%;
+    width: 80%;
   }
   .promo-form {
     width: 90%;

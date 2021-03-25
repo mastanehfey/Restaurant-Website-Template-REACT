@@ -38,6 +38,16 @@ export default class Navbar extends Component {
         // allLinks.forEach(item=>{
         //     item.addEventListener('click', ()=>this.checkPageHeight())
         // })
+        var docWidth = document.documentElement.offsetWidth;
+        console.log('docWidth',docWidth);
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function(el) {
+              if (el.offsetWidth > docWidth) {
+                console.log(el,el.offsetWidth);
+              }
+            }
+          );
     }
     openModal = () =>{
         const holder = document.querySelector('.search-container')
@@ -75,7 +85,6 @@ export default class Navbar extends Component {
                     <SearchResult closeModal={this.closeModal}/>
                 </div>
                 <div className='navbar'>
-                    {/* <div className={this.state.needScroll ? "go-top-btn show-up-btn" : "go-top-btn"}><FaChevronUp /></div> */}
                     <div className="bg-dark">
                         <div className='container top-menu'>
                             <button className='btn burger-menu' onClick={this.toggleMenu}><FaBars className='bar-icon'/></button>
