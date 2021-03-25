@@ -8,7 +8,7 @@ Restaurant Online Ordering System Which is bootstrapped with Create React App.
 
 ## General info
 ```
-This project is a Restaurant online ordering website, Data is hosted by Netlify.
+This project is a Restaurant online ordering website, Data is hosted by Contentful.
 Stores the cart in Local Storage.
 Which I made it to improve my skills in using Context in React.
 ```
@@ -18,7 +18,7 @@ Project is created with:
 * HTML5 / CSS3
 * JavaScript
 * React
-* Netlify
+* Contentful
 	
 ## Setup
 To run this project, install it locally using npm:
