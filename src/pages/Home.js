@@ -12,11 +12,11 @@ export default function Home() {
             <div className="carousel-section-home">
             <HomeChiefSection />
             </div>
-            <div className="container">
+            {/* <div className="container">
                 <div className="home-sort-menu">
                     <SortMenu />
                 </div>
-            </div>
+            </div> */}
             <div className="promocode-container">
                 <div className="promo-form">
                     <h3>FOR 10% DISCOUNT</h3>

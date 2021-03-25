@@ -28,7 +28,6 @@ class ContextProvider extends Component {
     getData = async()=>{
         try{
             const response = await client.getEntries({'content_type':'foodWebsite'})
-            console.log(response.items);
             this.formatData(response.items)
         }
         catch(error){

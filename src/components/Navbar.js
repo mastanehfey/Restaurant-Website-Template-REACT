@@ -98,7 +98,7 @@ export default class Navbar extends Component {
                         </div>
                     </div>
                     <div className="container food-menu-large-screen hidden">
-                        <FoodMenu />
+                        <FoodMenu closeMenu={this.toggleMenu}/>
                     </div>
                     <div className='container sticky-bottom-menu'>
                     <span className="sticky-bottom-menu-item"><FaHome className='icon icon-fa'/><span>Home</span></span>
@@ -114,7 +114,7 @@ export default class Navbar extends Component {
                     </div>
                     <div className={this.state.isMenuOpen ? 'collapse-menu show-menu' : 'collapse-menu'}>
                         <button className='btn close-btn-menu' onClick={this.toggleMenu}>X</button>
-                        <FoodMenu />
+                        <FoodMenu closeMenu={this.toggleMenu}/>
                         <Menu closeMenu={this.toggleMenu}/>
                     </div>
                 </div>

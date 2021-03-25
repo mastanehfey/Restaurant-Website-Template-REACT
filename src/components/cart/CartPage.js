@@ -29,14 +29,14 @@ export default function CartPage() {
             <div className="table-wrapper">
             <table className="table-cart-page">
                 <thead>
-                <tr className="borders">
+                <tr className="borders cart-header">
                     <th>Product</th>
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Subtotal</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody className="break-table">
                 {cartItems}
                 </tbody>
             </table>

@@ -141,7 +141,7 @@ export default function HomeSlide(){
             <span className="next-slide" onClick={()=>goNextSlide(1)}><FaChevronRight/></span>
 
             <div className="slide-wrapper flipImage transparent" id='1'>
-                <img src={slide1} alt="home slider" />
+                <img src={slide1} alt="home slider" className="slider-cover-image"/>
                 <div className="sliderTextContainer">
                     <div className="slide-inner-box">
                         <img src={pizzaslice} alt="japanese teapot" />
@@ -155,7 +155,7 @@ export default function HomeSlide(){
                 <img src={leaf13} alt="mouse effect leaf" className="mouse-effect-image leaf13"/>
             </div>
             <div className="slide-wrapper transparent" id='3'>
-                <img src={slide2} alt="home slider" />
+                <img src={slide2} alt="home slider" className="slider-cover-image"/>
                 <div className="sliderTextContainer">
                     <div className="slide-inner-box">
                         <img src={teapot} alt="pizza pepperoni" />

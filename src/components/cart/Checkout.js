@@ -15,13 +15,12 @@ export default class Checkout extends Component {
             targets.map(item=>{
                 item.checked = false
                 let descDiv = item.nextElementSibling
-                descDiv.classList.add('height0')
-                descDiv.classList.remove('height100')
+                // descDiv.classList.add('height0')
+                // descDiv.classList.remove('height100')
                 return true
             })
             e.target.checked = true
-            e.target.nextElementSibling.classList.add('height100')
-            console.log(e.target.nextElementSibling);
+            // e.target.nextElementSibling.classList.add('height100')
         }
         return (
             <div className="container checkout-page">
@@ -146,7 +145,7 @@ export default class Checkout extends Component {
                         </tr>
                         
                         <tr className="align-center">
-                            <td><button className="cart-btn checkout-btn-cart-page">Place Order</button></td>
+                            <td className="align-center"><button className="cart-btn checkout-btn-cart-page">Place Order</button></td>
                         </tr>
                         </tbody>
                     </table>
